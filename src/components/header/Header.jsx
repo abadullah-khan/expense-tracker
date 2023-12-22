@@ -1,7 +1,9 @@
 import React from "react";
 
+import "./header.scss";
+
 const Header = () => {
-  return <div>Header</div>;
+  return <div className="header_container">Expense Tracker</div>;
 };
 
 export default Header;

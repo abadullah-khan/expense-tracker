@@ -1,0 +1,38 @@
+.header_container {
+  color: yellow;
+  background-color: rgba(194, 144, 7, 0.767);
+  width: 100%;
+  font-size: 1.8rem;
+  text-align: center;
+}
+@media (max-width: 2500px) {
+  .header_container {
+    font-size: calc(1.8rem * 1.85);
+  }
+}
+@media (max-width: 1900px) {
+  .header_container {
+    font-size: calc(1.8rem * 1.65);
+  }
+}
+@media (max-width: 1600px) {
+  .header_container {
+    font-size: calc(1.8rem * 1.5);
+  }
+}
+@media (max-width: 800px) {
+  .header_container {
+    font-size: calc(1.8rem * 1.25);
+  }
+}
+@media (max-width: 500px) {
+  .header_container {
+    font-size: calc(1.8rem * 1.05);
+  }
+}
+
+@media (min-width: 2500px) {
+  .header_container {
+    font-size: calc(1.8rem * 2);
+  }
+}

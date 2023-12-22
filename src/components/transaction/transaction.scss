@@ -1,0 +1,90 @@
+.card {
+  margin: 0.1rem 1rem;
+  padding: 0.25rem 0;
+  box-shadow: 0 0 2px 0px black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.5rem;
+  > .index {
+    flex: 0.5;
+    display: flex;
+    gap: 1rem;
+  }
+  > .amount {
+    flex: 0.4;
+    text-align: center;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 2500px) {
+  .card {
+    margin: calc(0.25rem * 1.85) calc(1rem * 1.85);
+    padding: calc(0.25rem * 1.85) 0;
+    border-radius: calc(5px * 1.85);
+    font-size: calc(1.5rem * 1.85);
+    > .index {
+      gap: calc(1rem * 1.85);
+    }
+  }
+}
+
+@media (max-width: 1900px) {
+  .card {
+    margin: calc(0.25rem * 1.65) calc(1rem * 1.65);
+    padding: calc(0.25rem * 1.65) 0;
+    border-radius: calc(5px * 1.65);
+    font-size: calc(1.5rem * 1.65);
+    > .index {
+      gap: calc(1rem * 1.65);
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .card {
+    margin: calc(0.25rem * 1.5) calc(1rem * 1.5);
+    padding: calc(0.25rem * 1.5) 0;
+    border-radius: calc(5px * 1.5);
+    font-size: calc(1.5rem * 1.5);
+    > .index {
+      gap: calc(1rem * 1.5);
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .card {
+    margin: calc(0.25rem * 1.25) calc(1rem * 1.25);
+    padding: calc(0.25rem * 1.25) 0;
+    border-radius: calc(5px * 1.25);
+    font-size: calc(1.5rem * 1.25);
+    > .index {
+      gap: calc(1rem * 1.25);
+    }
+  }
+}
+@media (max-width: 500px) {
+  .card {
+    margin: calc(0.25rem * 1.05) calc(1rem * 1.05);
+    padding: calc(0.25rem * 1.05) 0;
+    border-radius: calc(5px * 1.05);
+    font-size: calc(1.5rem * 1.05);
+    > .index {
+      gap: calc(1rem * 1.05);
+    }
+  }
+}
+@media (min-width: 2500px) {
+  .card {
+    margin: calc(0.25rem * 2) calc(1rem * 2);
+    padding: calc(0.25rem * 2) 0;
+    border-radius: calc(5px * 2);
+    font-size: calc(1.5rem * 2);
+    > .index {
+      gap: calc(1rem * 2);
+    }
+  }
+}
