@@ -19,6 +19,34 @@
   }
 }
 
+.button_container {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  width: 100%;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  justify-content: flex-end;
+  padding-inline: 1rem;
+  > button {
+    font-size: 1.5rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .remove_button {
+    background-color: red;
+  }
+}
+.reveal_button {
+  height: auto;
+  opacity: 1;
+}
+
 @media (max-width: 2500px) {
   .card {
     margin: calc(0.25rem * 1.85) calc(1rem * 1.85);
@@ -27,6 +55,14 @@
     font-size: calc(1.5rem * 1.85);
     > .index {
       gap: calc(1rem * 1.85);
+    }
+  }
+  .button_container {
+    padding-inline: calc(1rem * 1.85);
+    > button {
+      font-size: calc(1.5rem * 1.35);
+      padding: calc(0.25rem * 1.35) calc(0.75rem * 1.35);
+      border-radius: calc(8px * 1.35);
     }
   }
 }
@@ -41,6 +77,14 @@
       gap: calc(1rem * 1.65);
     }
   }
+  .button_container {
+    padding-inline: calc(1rem * 1.65);
+    > button {
+      font-size: calc(1.5rem * 1.25);
+      padding: calc(0.25rem * 1.25) calc(0.75rem * 1.25);
+      border-radius: calc(8px * 1.25);
+    }
+  }
 }
 
 @media (max-width: 1600px) {
@@ -51,6 +95,14 @@
     font-size: calc(1.5rem * 1.5);
     > .index {
       gap: calc(1rem * 1.5);
+    }
+  }
+  .button_container {
+    padding-inline: calc(1rem * 1.5);
+    > button {
+      font-size: calc(1.5rem * 1);
+      padding: calc(0.25rem * 1) calc(0.75rem * 1);
+      border-radius: calc(8px * 1);
     }
   }
 }
@@ -65,6 +117,9 @@
       gap: calc(1rem * 1.25);
     }
   }
+  .button_container {
+    padding-inline: calc(1rem * 1.25);
+  }
 }
 @media (max-width: 500px) {
   .card {
@@ -76,6 +131,14 @@
       gap: calc(1rem * 1.05);
     }
   }
+  .button_container {
+    padding-inline: calc(1rem * 1.05);
+    > button {
+      font-size: calc(1.5rem * 0.85);
+      padding: calc(0.25rem * 0.85) calc(0.75rem * 0.85);
+      border-radius: calc(8px * 0.85);
+    }
+  }
 }
 @media (min-width: 2500px) {
   .card {
@@ -85,6 +148,14 @@
     font-size: calc(1.5rem * 2);
     > .index {
       gap: calc(1rem * 2);
+    }
+  }
+  .button_container {
+    padding-inline: calc(1rem * 2);
+    > button {
+      font-size: calc(1.5rem * 1.5);
+      padding: calc(0.25rem * 1.5) calc(0.75rem * 1.5);
+      border-radius: calc(8px * 1.5);
     }
   }
 }
