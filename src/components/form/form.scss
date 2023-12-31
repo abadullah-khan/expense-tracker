@@ -39,10 +39,17 @@ form {
     }
   }
   > button {
+    background-color: rgb(20, 20, 148);
+    color: white;
     align-self: center;
     font-size: 1.8rem;
     padding: 0.25rem 0.75rem;
     border-radius: 10px;
+  }
+  > .save_button {
+    background-color: white;
+    color: rgb(20, 20, 148);
+    border-color: rgb(20, 20, 148);
   }
 }
 

@@ -24,6 +24,15 @@ const Transaction = ({ data, index }) => {
         `}
       >
         <button
+          className="edit_button"
+          title="Edit item"
+          onClick={() =>
+            dispatch({ type: "EDIT_TRANSACTION", payload: data.id })
+          }
+        >
+          Edit
+        </button>
+        <button
           className="remove_button"
           title="Remove item"
           onClick={() =>

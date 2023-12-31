@@ -6,7 +6,9 @@ import Form from "./components/form/Form";
 import Transaction from "./components/transaction/Transaction";
 
 function App() {
-  const { transactions } = useContext(GlobalContext);
+  const {
+    state: { transactions },
+  } = useContext(GlobalContext);
 
   const income = transactions.reduce((acc, curr) => {
     if (curr.transaction_type === "income") {

@@ -4,20 +4,18 @@ import { GlobalContext } from "../../context/GlobalState";
 import "./form.scss";
 
 const Form = () => {
-  const { formData, setFormData, dispatch } = useContext(GlobalContext);
-
+  const {
+    state: { formData, toggleAddTransaction },
+    dispatch,
+  } = useContext(GlobalContext);
   const handleInputChange = (event) => {
-    const { name, value } = event.target;
-    setFormData({ ...formData, [name]: value });
+    dispatch({ type: "SET_FORM_DATA", payload: event.target });
   };
   const onSubmit = (e) => {
     e.preventDefault();
-
     dispatch({
       type: "ADD_TRANSACTION",
-      payload: { ...formData, id: Math.random() * 10000 },
     });
-    setFormData({});
   };
   return (
     <form onSubmit={(e) => onSubmit(e)}>
@@ -66,7 +64,13 @@ const Form = () => {
           onChange={(e) => handleInputChange(e)}
         />
       </div>
-      <button type="submit">Add</button>
+      {toggleAddTransaction ? (
+        <button type="submit">Add</button>
+      ) : (
+        <button type="submit" className="save_button">
+          Save
+        </button>
+      )}
     </form>
   );
 };

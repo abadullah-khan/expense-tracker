@@ -27,6 +27,7 @@
   transition: all 0.4s ease-in-out;
   display: flex;
   justify-content: flex-end;
+  gap: 1rem;
   padding-inline: 1rem;
   > button {
     font-size: 1.5rem;
@@ -37,9 +38,14 @@
       cursor: pointer;
     }
   }
-
+  .edit_button {
+    background-color: white;
+    color: rgb(20, 20, 148);
+    border-color: rgb(20, 20, 148);
+  }
   .remove_button {
     background-color: red;
+    color: white;
   }
 }
 .reveal_button {
