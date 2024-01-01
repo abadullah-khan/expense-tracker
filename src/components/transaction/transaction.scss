@@ -37,6 +37,9 @@
     &:hover {
       cursor: pointer;
     }
+    &:active {
+      filter: invert(1);
+    }
   }
   .edit_button {
     background-color: white;
